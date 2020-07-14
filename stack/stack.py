@@ -9,6 +9,10 @@ return elements in Last In First Out order.
    Make sure the Stack tests pass.
 3. What is the difference between using an array vs. a linked list when 
    implementing a Stack?
+   A: Arrays can be iterated over and all data, where with a singly linked list 
+   we can only get at the head or tail and then the next node. Stack is last in 
+   first out so it is prefferable to use a system that really only focusing on 
+   the ends of an array.
 """
 from singly_linked_list import LinkedList
 
