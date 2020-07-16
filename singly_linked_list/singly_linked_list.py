@@ -15,11 +15,16 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-        self.tail = None 
+        self.tail = None
 
-    # def prepend(self, value):
-    #     current = self.head
-    #     self.head = Node(value, current)
+    def add_to_head(self, value):
+        new_node = Node(value)
+        if self.head is None and self.tail is None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.set_next(self.head)
+            self.head = new_node
 
     def add_to_tail(self, value):
         new_node = Node(value)
